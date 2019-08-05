@@ -31,4 +31,4 @@ build/
 .vscode/
 
 ### Key Files ###
-key.json
+*key.json
