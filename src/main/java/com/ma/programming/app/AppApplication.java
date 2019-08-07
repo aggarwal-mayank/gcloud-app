@@ -22,7 +22,7 @@ public class AppApplication extends SpringBootServletInitializer {
 
 	@GetMapping("/")
 	public String hello() {
-		return "hello world! - from SpringBoot app";
+		return "hello world! - from SpringBoot app - My App";
 	}
 
 }

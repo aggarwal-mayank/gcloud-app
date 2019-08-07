@@ -27,7 +27,7 @@ import java.util.List;
 @RestController
 public class ComputeController {
 
-    private static final String APPLICATION_NAME = "";
+    private static final String APPLICATION_NAME = "My Application";
 
 
     /** Global instance of the HTTP transport. */
