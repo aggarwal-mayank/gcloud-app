@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class ComputeController {
@@ -46,6 +47,15 @@ public class ComputeController {
     public String instances(@RequestHeader("project-id") String PROJECT_ID, @RequestHeader("zone") String ZONE_NAME) {
         try {
             System.out.println("GOOGLE_APPLICATION_CREDENTIALS: "+System.getenv("GOOGLE_APPLICATION_CREDENTIALS"));
+
+            // below commented lines Did not work
+//            System.out.println("PWD: "+System.getenv("PWD"));
+//            String pwd = System.getenv("PWD");
+//            System.setProperty("GOOGLE_APPLICATION_CREDENTIALS", pwd+System.getenv("GOOGLE_APPLICATION_CREDENTIALS"));
+//
+//            System.out.println("GOOGLE_APPLICATION_CREDENTIALS: env"+System.getenv("GOOGLE_APPLICATION_CREDENTIALS"));
+//            System.out.println("GOOGLE_APPLICATION_CREDENTIALS: prop"+System.getProperty("GOOGLE_APPLICATION_CREDENTIALS"));
+
             httpTransport = GoogleNetHttpTransport.newTrustedTransport();
 
             // Authenticate using Google Application Default Credentials.
