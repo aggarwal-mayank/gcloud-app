@@ -87,7 +87,7 @@
 					<deploy.promote>true</deploy.promote>
 					<deploy.stopPreviousVersion>true</deploy.stopPreviousVersion>
 					<deploy.projectId>my-kubernetes-248208</deploy.projectId>
-					<deploy.version>siete</deploy.version>
+					<deploy.version>ocho</deploy.version>
 					<appEngineDirectory>${basedir}/src/main/appengine</appEngineDirectory>
 				</configuration>
 			</plugin>
